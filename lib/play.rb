@@ -38,5 +38,8 @@ end
 round = 0
 # Define your play method below
 def play(board)
-
+  while round <= 9
+    turn(board)
+    round += 1
+  end
 end
