@@ -35,4 +35,14 @@ def turn(board)
   end
 end
 
+
 # Define your play method below
+def play(board)
+  round = 1
+  while round <= 9
+    turn(board)
+    round += 1
+  end
+  puts "Thank you for playing"
+  exit
+end
