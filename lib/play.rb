@@ -29,6 +29,7 @@ def turn(board)
   index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index)
+    round += 1
     display_board(board)
   else
     turn(board)
@@ -40,6 +41,5 @@ round = 0
 def play(board)
   while round <= 9
     turn(board)
-    round += 1
   end
 end
